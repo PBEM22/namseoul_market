@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<style>
+    .return input{
+        background-color: #0cc;
+        color: white;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>회원가입</title>
+</head>
+
+<!-- 로고 -->
+
+<body>
+    <div class="reader">
+        <div class="wrapper">
+            <div class="header">
+                <h1>
+                    <a href="index.html" class="h_logo">
+                        <span class="blind">naver</span>
+                    </a>
+                </h1>
+            </div>
+
+<!-- 아이디, 비밀번호, 비밀번호 재확인 -->
+
+        <div class="content">
+            <div class="row_group">
+                <div class="join_row">
+                    <div id="ID">
+                        <h3 class="join_title">
+                            <label for="id">아이디</label>
+                        </h3>
+                        <span class="box int_id">
+                            <input type="text" id="id" name="id" class="int" title="ID" maxlength="20">
+                            <span class="step_url">@naver.com</span>
+                        </span>
+                        <div class="error_next_box"></div>
+                    </div>
+                </div>
+
+                <div class="join_row">
+                    <div id="PWD">
+                        <h3 class="join_title">
+                            <label for="pwd">비밀번호</label>
+                        </h3>
+                        <span class="box int_pwd">
+                            <input type="password" id="pass" name="pass" class="int">
+                            <span class="lock_1" id="lock_1"></span>
+                        </span>
+                        <div class="error_next_box"></div>
+                    </div>
+
+                    <div id="PWD_CHECK">
+                        <h3 class="join_title">
+                            <label for="pwd2">비밀번호 재확인</label>
+                        </h3>
+                        <span class="box int_pawd_check">
+                            <input type="password" id="pass_check" name="pass_check" class="int">
+                            <span class="lock_2" id="lock_2"></span>
+                        </span>
+                        <div class="error_next_box"></div>
+                    </div>
+                </div>
+            </div>
+
+<!-- 이름, 생년월일, 성별, 본인확인 이메일 -->
+
+            <div class="row_group">
+                <div class="join_row">
+                    <div id="NAME">
+                        <h3 class="join_title">
+                            <label for="name">이름</label>
+                        </h3>
+                        <span class="box">
+                            <input type="text" id="name" name="name" class="int">
+                        </span>
+                        <div class="error_next_box"></div>
+                    </div>
+                </div>
+                
+                <div class="join_row">
+                    <div class="birth">
+                        <h3 class="join_title">
+                            <label for="bir_yy">생년월일</label>
+                        </h3>
+                        <div class="ps_box">
+                    
+                        
+                            <span class="box">
+                                <input type="text" id="yy" name="yy" class="int" placeholder="년(4자)" maxlength="4">
+                            </span>
+                        
+
+                        
+                            <span class="box1">
+                                <select name="mm" id="mm" name="mm" class="sel">
+                                    <option value>월</option>
+                                    <option value="01">1</option>
+                                    <option value="02">2</option>
+                                    <option value="03">3</option>
+                                    <option value="04">4</option>
+                                    <option value="05">5</option>
+                                    <option value="06">6</option>
+                                    <option value="07">7</option>
+                                    <option value="08">8</option>
+                                    <option value="09">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </span>
+                        
+
+                        
+                            <span class="box1">
+                                <input type="text" id="bir_dd" name="dd" class="int" placeholder="일">
+                            </span>
+                        
+                        </div>
+                        <div class="error_next_box"></div>
+                    </div>
+                </div>
+
+                <div class="join_row">
+                    <h3 class="join_title">
+                        <label for="gender">성별</label>
+                    </h3>
+                    <div class="box">
+                        <select name="gender" id="gender" class="sel">
+                            <option value>성별</option>
+                            <option value="man">남성</option>
+                            <option value="woman">여성</option>
+                            <option value="nope">없음</option>
+                        </select>
+                    </div>
+                    <div class="error_next_box"></div>
+                </div>
+
+                <div class="join_row">
+                    <h3 class="join_title"> 
+                        <label for="email">본인확인 이메일
+                            <span class="choice">(선택)</span>
+                        </label>
+                    </h3>
+                    <span class="box">
+                        <input type="text" id="email" name="email" class="int" placeholder="선택입력">
+                    </span>
+                </div>
+            </div>
+
+<!-- 휴대전화 -->
+ 
+            <div class="join_row join_mobile">
+                
+                <h3 class="join_title">
+                    <label for="mobile">휴대전화</label>
+                </h3>
+                
+                <span class="box">
+                    <select name="contry" id="con" name="con" class="sel">
+                        <option value>대한민국 +82</option>
+                        <option value="korea">대한민국 +82</option>
+                        <option value="GANA">가나 +233</option>
+                        <option value="den">덴마크 +45</option>
+                    </select>
+                </span>
+                
+                <div class="mobile_area">
+                    <span class="box">
+                        <input type="tel" id="num" name="num" class="int" placeholder="전화번호 입력">
+                    </span>
+                        <button type="button" class="" >인증번호 받기</button>
+                </div>
+
+                <span class="box gray_box">
+                    <input type="tel" id="in" name="in" class="int" disabled placeholder="인증번호 입력하세요">
+                </span>
+            </div>
+            
+            <div class="btn_area">
+                <button type="button">
+                    <span>가입하기</span>
+                </button>
+            </div>
+            <div class="return"><a href="index.html"><input type="button" value="돌아가기"></a></div>
+        </div>
+    </div>
+</div>
+
+<script src="register/index.js"></script>
+</body>
+</html>

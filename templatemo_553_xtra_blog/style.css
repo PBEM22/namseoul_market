@@ -1,0 +1,242 @@
+html{
+    height: 100%;
+}
+
+body{
+    
+    margin: 0;
+    height: 100%;
+    background: #f5f6f7;
+    font-family: Dotum, '돋움', Helvetica, sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        width: auto;
+        max-width: 768px;
+    }
+    
+    .content {
+        width: 460px;
+        margin: 0 auto;
+    }
+}
+
+div{
+    display: block;
+}
+
+input:focus-within{
+    outline-color: #0cc;
+}
+input{
+    border: none;
+}
+input:focus{
+    outline: none;
+    
+}
+.h_logo{
+   display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url("img/남대마켓_로고.jpg");
+    background-size: 100%;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.reader{
+    padding-top: 62px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.wrapper{
+    position: relative;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 460px;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.row_group{
+    margin-top: 20px;
+}
+
+#id{
+    height: 29px;
+    width: 334px;
+}
+
+h3{
+    margin: 19px 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.lock_1, .lock_2{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    background-image: url("https://static.nid.naver.com/images/ui/join/m_icon_pw_step.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 125px 75px;
+    cursor: pointer;
+    
+}
+
+.box, .box1{
+    display: block;
+    width: 100%;
+    height: 51px;
+    width: 460px;
+    border: solid 1px #dadada;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+}
+
+.int{
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 29px; 
+    border: none;
+    background: #fff;
+    font-size: 15px;
+}
+
+.step_url{
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #8e8e8e;
+}
+
+.ps_box{
+    display: flex;
+    width: 100%;
+}
+
+.ps_box .box, .box1{
+    width: 146.7px;
+    height: 51px;
+}
+
+.ps_box input{
+    width: 100%;
+}
+
+.box1{
+    margin-left: 10px;
+}
+
+.sel{
+    width: 100%;
+    height: 29px;
+    font-size: 15px;
+    border: none;
+}
+
+.join_title{
+    margin: 19px 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.choice{
+    font-size: 12px;
+    font-weight: 400;
+    color: #8e8e8e;
+}
+
+.mobile_area{
+    position: relative;
+}
+
+.mobile_area .box{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px 10px 14px;
+}
+
+.mobile_area button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 115px;
+    height: 51px;
+    font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #fff;
+    border: solid 1px;
+    background-color: #0cc;
+    margin-top: 10px;
+}
+
+.join_mobile .box{
+    margin-top: 10px;
+}
+
+.mobile_area .int{
+    margin-right: 125px;
+}
+
+.box #in{
+    background-color: #f5f6f7;
+}
+.gray_box {
+    background-color: #f5f6f7;
+    
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 15px 0 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn_area button{
+    color: #fff;
+    border: solid 1px;
+    background-color: #0cc;
+    margin-top: 10px;
+}
+@media (max-width: 1024px){
+ .wrapper{
+    width: auto;
+    max-width: 768px;
+ }
+ .content{
+    width: 460px;
+    margin: 0 auto;
+ }
+}
